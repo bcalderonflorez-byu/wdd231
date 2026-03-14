@@ -84,7 +84,7 @@ header {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-  background-color: var(--third);
+  background-color: var(--secondary);
 }
 
 
