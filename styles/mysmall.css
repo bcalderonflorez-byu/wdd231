@@ -133,7 +133,7 @@ main h1 {
   align-items: center;        
   justify-content: center; 
   width: 100%;
-  max-width: 200px;
+  max-width: 173px;
   height: auto;
   margin: 1rem auto 0;
   border-radius: 5px;
@@ -173,9 +173,9 @@ main h1 {
 
 .course-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .course-code {
@@ -219,7 +219,7 @@ main h1 {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-section img {
