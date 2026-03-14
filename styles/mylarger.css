@@ -94,16 +94,27 @@ main h1 {
 
 /* ABOUT SECTION */
 .about-section {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-right: -10rem;
 }
+.about-photo-section {
+  gap: 1rem;
+  margin-left: 10rem;
+}
+
+.cards {
+    display: grid; /* Grid container for cards */
+    grid-template-columns: repeat(2, 1fr); /* Three column layout for larger screens */
+    gap: 1rem;
+    padding: 10px; /* Padding around the cards container */
+}
+
 
 .about, .photo {
   background-color: #eaeaea;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -118,7 +129,7 @@ main h1 {
 .photo img {
   display: block;
   width: 100%;
-  max-width: 200px;
+  max-width: 173px;
   height: auto;
   margin: 1rem auto 0;
   border-radius: 5px;
