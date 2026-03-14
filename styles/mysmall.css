@@ -1,0 +1,328 @@
+/* Root Variables for Colors */
+:root {
+  --primary: #1a426d;
+  --secondary: #467291;
+  --third: #b7daf3;
+  --heading-font: "Montserrat";
+  --body-font: "Libertinus Sans ";
+}
+
+
+/* Small Screen Styles (mysmall.css) */
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Hamburger (menu button) */
+.menu-toggle {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* NAVIGATION */
+.nav-menu {
+  display: none;
+  background-color: var(--primary);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-menu.open {
+  display: block;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  background-color: var(--third);
+}
+
+
+/* MAIN */
+/* MAIN STRUCTURE */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #222;
+  background-color: #f4f6f5;
+}
+
+main h1 {
+  text-align: left;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about, .photo {
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about h2, .photo h2 {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.photo img {
+    display: flex;
+  flex-direction: column;     
+  align-items: center;        
+  justify-content: center; 
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 1rem auto 0;
+  border-radius: 5px;
+  background-color: #ccc; /* placeholder color */
+}
+
+
+/* === Courses Section Small View === */
+.courses-section {
+    padding: 1rem;
+    background-color: #f5f7f5;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filter-buttons button {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background-color: var(--primary);
+    transform: scale(1.05);
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.course-code {
+    border-radius: 6px;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    width: fit-content;
+    min-width: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Completed courses — green */
+.course-code.completed {
+    background-color: var(--third);
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+/* Incomplete courses — light gray */
+.course-code.incomplete {
+    background-color: #eee;
+    border: 2px solid #aaa;
+    color: #666;
+}
+
+.course-code:hover {
+    transform: scale(1.05);
+}
+
+.credits {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+
+
+/* SOCIAL SECTION */
+.social-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-section img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0);
+  transition: transform 0.3s;
+}
+
+.social-section img:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1.2rem 0.5rem;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+footer .socials img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+footer .socials img:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+/* ***************Dialog Styles*************** */
+#dialog-box {
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Slightly rounded corners for the dialog */
+    padding: 0; /* Removed default padding to allow custom padding in dialog-content */
+    background-color: #fff;
+    box-shadow: 0 0 3rem #000000;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+.dialog-content {
+    position: relative; /* Position relative for close button positioning */
+}
+.dialog-header {
+    border-bottom: solid 1px #ddd; /* Light grey border at the bottom */
+    margin-bottom: 10px; /* Space below the header */
+    background-color: var(--primary); /* Primary color background for the dialog header */
+    width: 100%;
+    padding: 10px 20px;
+}
+.dialog-header h2 {
+    font-size: 1.5rem; /* Larger font size for the dialog title */
+    color: white; /* White text for better contrast */
+}
+.dialog-content h3 {
+    font-size: 1.3rem; /* Slightly larger font size for the dialog subtitles */
+    margin: 10px 20px 5px 20px; /* Margin around the subtitles top right bottom left */
+}
+.dialog-content p {
+    padding: 0 20px 10px 20px; /* Padding around the dialog content */
+    margin-bottom: 5px; /* Space below each paragraph */
+}
+
+.close-btn {
+    position: absolute; /* Position absolute for placement in the top-right corner */
+    top: 10px; /* 10px from the top of the dialog */
+    right: 10px; /* 10px from the right of the dialog */
+    background-color: var(--third); /* Dark blue background color for the close button */
+    border-radius: 5px; /* Slightly rounded corners for the close button */;
+    border: none; /* button element default had a border, so we removed it */
+    color: var(--primary); /* Whitish color for the close icon */
+    cursor: pointer; /* Cursor changes to pointer on hover to indicate its clickable */
+    font-size: 1.3rem; /* Larger size for visibility */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font family for the icon */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    width: fit-content;
+    display: flex; /* Flex container for centering icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    padding: 5px 10px; /* Padding around the close icon */
+}
+.close-btn::before {
+    content: "\00D7"; /* X for close menu */
+}   
+.close-btn:hover {
+    scale: 1.05; /* Slightly enlarge the close icon on hover for better interactivity */
+    transition: all 0.1s ease-in-out;
+}
+::backdrop {
+    background : rgba(0, 0, 0, 0.473);
+}
