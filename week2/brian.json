@@ -1,0 +1,29 @@
+{
+    "familyName": "Calderon",
+    "movedIn": "05/18/2024",
+    "familyMembers": 5,
+    "visited": true,
+    "individual": 
+        [
+            {
+                "firstName": "Brian",
+                "gender": "Male",
+                "birthDate": "10/03/1989"
+            },
+            {
+                "firstName": "Maria",
+                "gender": "Female",
+                "birthDate": "21/11/1991"
+            },
+            {
+                "firstName": "Natalia",
+                "gender": "Female",
+                "birthDate": "16/02/2015"
+            },
+            {
+                "firstName": "Mariana",
+                "gender": "Female",
+                "birthDate": "14/11/2020"
+            }
+        ]
+}
