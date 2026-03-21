@@ -5,12 +5,12 @@
     padding: 0;
 }
 :root {
-    --primary-color: #2c3c50;
-    --secondary-color: #18bc9c;
-    --accent-color: #00638a;
+    --primary-color: #948E6B;
+    --secondary-color: #495850;
+    --accent-color: #6B7194;
     --font-color: #333333;
     --background-color: #f4f4f4;
-    --accent2: #41bdee;
+    --accent2: #4161ee;
 }
 body {
     font-family: 'Roboto', sans-serif; /* Updated font family */
