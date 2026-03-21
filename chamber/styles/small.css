@@ -23,7 +23,6 @@ body {
 /* ******************Header Styles********************* */
 header {
     background-color: var(--primary-color);
-    color: white;
     padding: 0.5rem;
     display: grid;
     grid-template-columns: auto 44px 44px;
