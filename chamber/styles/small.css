@@ -5,10 +5,10 @@
     padding: 0;
 }
 :root {
-    --primary-color: #2f5d8a;
-    --secondary-color: #495850;
+    --primary-color: #1a426d;
+    --secondary-color: #467291;
+    --font-color: #000000;    
     --accent-color: #281E15;
-    --font-color: #333333;
     --background-color: #f4f4f4;
     --accent2: #884b2e;
 }
